@@ -1,0 +1,5 @@
+Dlaczego został użyty httpPost, a nie httpDelete, skoro chcemy usunąć coś, a nie wysłać dane do aplikacji?
+A co, jeśli nie będzie istniał użytkownik o danym id? Wypadałoby obsłużyć taką sytuację. 
+Na przykład wrzucić linijkę z usuwaniem użytkownika w ifa i przy falsie zwrócić not found.
+W przypadku delete, gdy nie zwracamy dodatkowych informacji, standardowo korzysta się z kodu 204 (No Content).
+Ok jest używany, gdy chcemy zwrócić dodatkowo jakąś informację.
